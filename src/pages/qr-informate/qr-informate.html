@@ -1,0 +1,25 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>QR-Infórmate</ion-title>
+    <ion-buttons>
+    <button ion-button
+            icon-only
+            menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <button ion-button icon-left
+          block
+          (click)="scan()">
+          <ion-icon name="qr-scanner"></ion-icon>
+          Escanear código
+  </button>
+
+</ion-content>

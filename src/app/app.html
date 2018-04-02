@@ -1,1 +1,59 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menú</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <button ion-item (click)="openPage(ind)" icon-left>
+         <ion-icon name="home"></ion-icon>
+        Inicio
+      </button>
+      <button ion-item (click)="openPage(alcalde)" icon-left>
+        <ion-icon name="ios-chatbubbles"></ion-icon>
+        Alcalde en linea
+      </button>
+      <button ion-item (click)="openPage(tramites)" icon-left>
+        <ion-icon name="ios-paper"></ion-icon>
+        Tramites
+      </button>
+      <button ion-item (click)="openPage(qrinfo)" icon-left>
+        <ion-icon name="md-qr-scanner"></ion-icon>
+        QR- Informate
+      </button>
+      <button ion-item (click)="openPage(eventos)" icon-left>
+        <ion-icon name="md-calendar"></ion-icon>
+        Eventos
+      </button>
+      <button ion-item (click)="openPage(audiencia)" icon-left>
+        <ion-icon name="ios-people"></ion-icon>
+        Audiencia
+      </button>
+      <button ion-item (click)="openPage(historia)" icon-left>
+        <ion-icon name="ios-book"></ion-icon>
+        Historia
+      </button>
+      <button ion-item (click)="openPage(turismo)" icon-left>
+        <ion-icon name="ios-planet"></ion-icon>
+        Turismo
+      </button>
+      <button ion-item (click)="openPage(emergencia)" icon-left>
+        <ion-icon name="ios-help-buoy"></ion-icon>
+        Emergencia
+      </button>
+      <button ion-item (click)="openPage(emergencia)" icon-left>
+        <ion-icon name="ios-link"></ion-icon>
+        Pago referenciado
+      </button>
+      <button ion-item (click)="openPage(nosotros)" icon-left>
+        <ion-icon name="ios-contacts"></ion-icon>
+        Nosotros
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+
+
+<ion-nav [root]="rootPage" #content></ion-nav>
