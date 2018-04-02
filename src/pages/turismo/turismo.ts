@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage} from 'ionic-angular';
+
+//import {SitiosComercialesPage,SitiosPage,DondecomerPage}  from "../index.paginas";
 
 /**
  * Generated class for the TurismoPage page.
@@ -14,12 +16,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'turismo.html',
 })
 export class TurismoPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad TurismoPage');
+  constructor() {
   }
 
 }

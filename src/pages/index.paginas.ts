@@ -10,3 +10,5 @@ export  {PagorefPage} from "./pagoref/pagoref";
 export {SitiosPage} from "./sitios/sitios";
 export {SitiosComercialesPage} from "./sitios-comerciales/sitios-comerciales";
 export {TurismoPage} from "./turismo/turismo";
+export {EmergenciasPage} from "./emergencias/emergencias";
+export {NosotrosPage} from "./nosotros/nosotros";

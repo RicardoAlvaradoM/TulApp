@@ -13,14 +13,13 @@ import {
  AlcaldePage,
  AudienciasPage,
  EventosPage,
- HistoriaPage,
  QrInformatePage,
  TramitesPage,
- DondecomerPage,
+ TurismoPage,
+ HistoriaPage,
+ EmergenciasPage,
  PagorefPage,
- SitiosPage,
- SitiosComercialesPage,
- TurismoPage
+ NosotrosPage
 
 } from "../pages/index.paginas";
 import { MyApp } from './app.component';
@@ -35,16 +34,15 @@ import { HistorialService} from '../providers/historial/historial';
     MyApp,
     PrincipalPage,
     AlcaldePage,
-    AudienciasPage,
     EventosPage,
-    HistoriaPage,
     QrInformatePage,
     TramitesPage,
-    DondecomerPage,
+    AudienciasPage,
+    TurismoPage,
+    HistoriaPage,
+    EmergenciasPage,
     PagorefPage,
-    SitiosPage,
-    SitiosComercialesPage,
-    TurismoPage
+    NosotrosPage
   ],
   imports: [
     BrowserModule,
@@ -57,11 +55,15 @@ import { HistorialService} from '../providers/historial/historial';
     MyApp,
     PrincipalPage,
     AlcaldePage,
-    AudienciasPage,
     EventosPage,
-    HistoriaPage,
     QrInformatePage,
     TramitesPage,
+    AudienciasPage,
+    TurismoPage,
+    HistoriaPage,
+    EmergenciasPage,
+    PagorefPage,
+    NosotrosPage
   ],
   providers: [
     StatusBar,

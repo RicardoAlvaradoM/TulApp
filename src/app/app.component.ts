@@ -2,7 +2,19 @@ import { Component } from '@angular/core';
 import { Platform, MenuController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import {PrincipalPage, AlcaldePage, TramitesPage, QrInformatePage,EventosPage} from "../pages/index.paginas";
+import {
+  PrincipalPage,
+  AlcaldePage,
+  TramitesPage,
+  QrInformatePage,
+  EventosPage,
+  AudienciasPage,
+  HistoriaPage,
+  TurismoPage,
+  PagorefPage,
+  EmergenciasPage,
+  NosotrosPage
+ } from "../pages/index.paginas";
 @Component({
   templateUrl: 'app.html'
 })
@@ -12,6 +24,12 @@ export class MyApp {
   tramites = TramitesPage;
   eventos =  EventosPage;
   ind = PrincipalPage;
+  audiencia = AudienciasPage;
+  historia = HistoriaPage;
+  turismo = TurismoPage;
+  pagoref = PagorefPage;
+  emergencia = EmergenciasPage;
+  nosotros =  NosotrosPage;
   rootPage:any = PrincipalPage ;
 
   constructor(platform: Platform,
