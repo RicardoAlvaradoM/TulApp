@@ -7,6 +7,12 @@ import { StatusBar } from '@ionic-native/status-bar';
 //plugins
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { HttpModule} from '@angular/http';
+import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
+
+//PipeTransform
+import {YoutubePipe} from "../pipes/youtube/youtube";
+
 //Importar paginas agregadas
 import {
  PrincipalPage,
@@ -19,15 +25,13 @@ import {
  HistoriaPage,
  EmergenciasPage,
  PagorefPage,
- NosotrosPage
+ NosotrosPage,
 
 } from "../pages/index.paginas";
 import { MyApp } from './app.component';
 
 //servicios
 import { HistorialService} from '../providers/historial/historial';
-
-
 
 @NgModule({
   declarations: [
@@ -42,10 +46,12 @@ import { HistorialService} from '../providers/historial/historial';
     HistoriaPage,
     EmergenciasPage,
     PagorefPage,
-    NosotrosPage
+    NosotrosPage,
+    YoutubePipe
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp,{
       backButtonText: 'Regresar'
     })
@@ -63,7 +69,7 @@ import { HistorialService} from '../providers/historial/historial';
     HistoriaPage,
     EmergenciasPage,
     PagorefPage,
-    NosotrosPage
+    NosotrosPage,
   ],
   providers: [
     StatusBar,
@@ -71,6 +77,7 @@ import { HistorialService} from '../providers/historial/historial';
     BarcodeScanner,
     InAppBrowser,
     HistorialService,
+    YoutubeVideoPlayer,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
 
   ]
