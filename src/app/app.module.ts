@@ -26,6 +26,7 @@ import {
  EmergenciasPage,
  PagorefPage,
  NosotrosPage,
+ BolsatrabajoPage
 
 } from "../pages/index.paginas";
 import { MyApp } from './app.component';
@@ -47,7 +48,8 @@ import { HistorialService} from '../providers/historial/historial';
     EmergenciasPage,
     PagorefPage,
     NosotrosPage,
-    YoutubePipe
+    YoutubePipe,
+    BolsatrabajoPage
   ],
   imports: [
     BrowserModule,
@@ -70,6 +72,7 @@ import { HistorialService} from '../providers/historial/historial';
     EmergenciasPage,
     PagorefPage,
     NosotrosPage,
+    BolsatrabajoPage
   ],
   providers: [
     StatusBar,

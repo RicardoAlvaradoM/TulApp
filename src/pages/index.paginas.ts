@@ -12,3 +12,4 @@ export {SitiosComercialesPage} from "./sitios-comerciales/sitios-comerciales";
 export {TurismoPage} from "./turismo/turismo";
 export {EmergenciasPage} from "./emergencias/emergencias";
 export {NosotrosPage} from "./nosotros/nosotros";
+export {BolsatrabajoPage} from "./bolsatrabajo/bolsatrabajo";

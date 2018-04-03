@@ -13,7 +13,8 @@ import {
   TurismoPage,
   PagorefPage,
   EmergenciasPage,
-  NosotrosPage
+  NosotrosPage,
+  BolsatrabajoPage
  } from "../pages/index.paginas";
 @Component({
   templateUrl: 'app.html'
@@ -30,6 +31,7 @@ export class MyApp {
   pagoref = PagorefPage;
   emergencia = EmergenciasPage;
   nosotros =  NosotrosPage;
+  trabajo = BolsatrabajoPage;
   rootPage:any = PrincipalPage ;
 
   constructor(platform: Platform,
