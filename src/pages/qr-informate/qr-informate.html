@@ -15,11 +15,21 @@
 
 
 <ion-content padding>
-  <button ion-button icon-left
-          block
-          (click)="scan()">
-          <ion-icon name="qr-scanner"></ion-icon>
-          Escanear código
-  </button>
+  <div>
+    <button ion-button icon-left
+            block
+            (click)="scan()">
+            <ion-icon name="qr-scanner"></ion-icon>
+            Escanear código
+    </button>
+    <div *ngIf="scannedData.text">
+      <label>Resultado:</label>
+      <br>
+      <span>
+        {{scannedData.text}}
+      </span>
+    </div>
+  </div>
+
 
 </ion-content>

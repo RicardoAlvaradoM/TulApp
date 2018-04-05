@@ -1,11 +1,36 @@
 page-turismo {
 .boton{
   width: 100%;
-  height: 100%;
-  float: left;
+  height: auto;
+  //float: left;
   display: inline-flex;
-  padding: 5px 10px;
+  padding: none;
   margin: 0px;
   border: 0px;
+  outline: none;
+  //white-space: normal;
+  //word-wrap: break-word;
+  //bottom: 0;
+  overflow: hidden;
+  background-color: #f53d3d;
+}
+.login-background {
+  background: url("../../assets/imgs/foturi.jpg")
+  no-repeat fixed center;
+  background-size: cover;
+  padding: 0px;
+}
+/*  position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}*/
+.footer{
+  margin-top: 0px;
+  float: left;
+  display:inline-flex;
+  border: 0px;
+  margin-bottom: 0px;
+
 }
 }

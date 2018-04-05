@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage } from 'ionic-angular';
 //plugins
-import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+import { BarcodeScanner, BarcodeScannerOptions } from '@ionic-native/barcode-scanner';
 
 //components
 import { ToastController, Platform} from 'ionic-angular';
@@ -15,17 +15,33 @@ import {HistorialService} from "../../providers/historial/historial";
   templateUrl: 'qr-informate.html',
 })
 export class QrInformatePage {
-
-  constructor(private barcodeScanner: BarcodeScanner,
+options: BarcodeScannerOptions;
+encodeText: string = '';
+encodedData:any=[];
+scannedData : any =[];
+  constructor(private scanner: BarcodeScanner,
               private toastCtrl: ToastController,
               private platform: Platform,
               private _historialService: HistorialService) {
   }
 
   scan(){
+    this.options={
+      prompt: 'Escanea el código QR'
+    };
+    this.scanner.scan(this.options).then((data)=>{
+      this.scannedData = data;
+    },
+     (err)=>{
+       console.log("Error :", err);
+     })
+  }
+  encode(){
+
+  }
 
 
-    console.log("Realizando scanner ....");
+    /*console.log("Realizando scanner ....");
 
     if( !this.platform.is('cordova')){
       this._historialService.agregar_historial("adadsdassdadsads")
@@ -59,5 +75,5 @@ export class QrInformatePage {
       duration: 2500
     });
     toast.present();
-  }
+  }*/
 }
