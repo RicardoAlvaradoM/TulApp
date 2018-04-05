@@ -14,7 +14,7 @@ import {
   PagorefPage,
   EmergenciasPage,
   NosotrosPage,
-  BolsatrabajoPage
+  BolsatrabajoPage,
  } from "../pages/index.paginas";
 @Component({
   templateUrl: 'app.html'

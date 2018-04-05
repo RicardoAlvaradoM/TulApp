@@ -4,10 +4,10 @@ import { IonicPage } from 'ionic-angular';
 import { BarcodeScanner, BarcodeScannerOptions } from '@ionic-native/barcode-scanner';
 
 //components
-import { ToastController, Platform} from 'ionic-angular';
+//import { ToastController, Platform} from 'ionic-angular';
 
 //Servicios
-import {HistorialService} from "../../providers/historial/historial";
+//import {HistorialService} from "../../providers/historial/historial";
 
 @IonicPage()
 @Component({
@@ -19,10 +19,8 @@ options: BarcodeScannerOptions;
 encodeText: string = '';
 encodedData:any=[];
 scannedData : any =[];
-  constructor(private scanner: BarcodeScanner,
-              private toastCtrl: ToastController,
-              private platform: Platform,
-              private _historialService: HistorialService) {
+  constructor(private scanner: BarcodeScanner
+            ) {
   }
 
   scan(){

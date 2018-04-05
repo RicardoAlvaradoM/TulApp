@@ -1,22 +1,22 @@
 import { Component } from '@angular/core';
-import { IonicPage} from 'ionic-angular';
-
-//import {SitiosComercialesPage,SitiosPage,DondecomerPage}  from "../index.paginas";
-
-/**
- * Generated class for the TurismoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
+import { IonicPage, NavController} from 'ionic-angular';
+import {SitiosPage, SitiosComercialesPage, DondecomerPage}  from "../index.paginas";
 @IonicPage()
 @Component({
   selector: 'page-turismo',
   templateUrl: 'turismo.html',
 })
 export class TurismoPage {
-  constructor() {
+  constructor( public navCtrl: NavController) {
+  }
+  SiteTurismo(){
+    this.navCtrl.push(SitiosPage);
+  }
+  siteComercio(){
+    this.navCtrl.push(SitiosComercialesPage);
+  }
+  siteFood(){
+    this.navCtrl.push(DondecomerPage);
   }
 
 }
