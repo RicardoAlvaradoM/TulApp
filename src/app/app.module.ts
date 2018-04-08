@@ -10,7 +10,8 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { HttpModule} from '@angular/http';
 import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
 import {GoogleMaps, Geocoder} from '@ionic-native/google-maps';
-import { Geolocation} from '@ionic-native/geolocation'; 
+import { Geolocation } from '@ionic-native/geolocation';
+
 
 //PipeTransform
 import {YoutubePipe} from "../pipes/youtube/youtube";
@@ -134,7 +135,6 @@ import { HistorialService} from '../providers/historial/historial';
     GoogleMaps,
     Geocoder,
     Geolocation,
-
     {provide: ErrorHandler, useClass: IonicErrorHandler}
 
   ]
