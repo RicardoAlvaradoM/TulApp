@@ -16,10 +16,9 @@
 
 
 <ion-content padding>
-  <button ion-button color="light" class="btn0">Light Round</button>
-  <button ion-button round>Primary Round</button>
-  <button ion-button color="secondary" round>Secondary Round</button>
-  <button ion-button color="danger" round>Danger Round</button>
-  <button ion-button color="dark" round>Dark Round</button>
-  <button type="button" ion-button color="primary" (click)="callNumbers()" block>Call Number</button>
+  <button ion-button color="light" (click)="callBomberos()">Bomberos</button>
+  <button ion-button round (click)="callPolicia()">Policia</button>
+  <button ion-button color="secondary"  (click)="callEmergencia()" round>911</button>
+  <button ion-button color="danger" round (click)="callCruz()">Cruz Roja</button>
+  <button ion-button color="primary" (click)="callNumbers()" block>Transito</button>
 </ion-content>
