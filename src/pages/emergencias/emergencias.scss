@@ -1,3 +1,18 @@
 page-emergencias {
-
+  .buttonRedond {
+      width:300px;
+      height:300px;
+      border-radius:150px;
+      border:10px solid #666;
+  }
+  .btn0{
+    background: url("../../assets/imgs/911.png")
+    no-repeat fixed center;
+    background-position: center;
+    background-size: contain;
+    padding: 0px;
+    border-radius: 150px;
+    width:70%;
+    height:70%;
+  }
 }

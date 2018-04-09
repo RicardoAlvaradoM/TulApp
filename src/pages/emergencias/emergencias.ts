@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { CallNumber } from '@ionic-native/call-number';
 
 /**
  * Generated class for the EmergenciasPage page.
@@ -15,11 +16,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class EmergenciasPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,private callNumber: CallNumber) {
+
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad EmergenciasPage');
   }
+  callJoint(telephoneNumber) {
+       this.callNumber.callNumber(`02073627291`, true);
+   }
 
 }

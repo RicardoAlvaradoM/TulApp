@@ -11,7 +11,7 @@ import { HttpModule} from '@angular/http';
 import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
 import {GoogleMaps, Geocoder} from '@ionic-native/google-maps';
 import { Geolocation } from '@ionic-native/geolocation';
-
+import { CallNumber } from '@ionic-native/call-number';
 
 //PipeTransform
 import {YoutubePipe} from "../pipes/youtube/youtube";
@@ -134,6 +134,7 @@ import { HistorialService} from '../providers/historial/historial';
     YoutubeVideoPlayer,
     GoogleMaps,
     Geocoder,
+    CallNumber,
     Geolocation,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
 
