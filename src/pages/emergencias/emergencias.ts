@@ -16,15 +16,16 @@ import { CallNumber } from '@ionic-native/call-number';
 })
 export class EmergenciasPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,private callNumber: CallNumber) {
-
-  }
+  constructor(public navCtrl: NavController, public navParams: NavParams,private callNumber: CallNumber) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad EmergenciasPage');
   }
-  callJoint(telephoneNumber) {
-       this.callNumber.callNumber(`02073627291`, true);
-   }
+  callNumbers(){
+    setTimeout(() => {
+      let tel = '12345678890';
+      window.open(`tel:${tel}`, '_system');
+    },100);
+  }
 
 }
