@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, Platform} from 'ionic-angular';
+import { IonicPage, NavController, NavParams} from 'ionic-angular';
 import {ScreenOrientation} from '@ionic-native/screen-orientation';
 
 @IonicPage()
@@ -12,9 +12,8 @@ export class PagorefPage {
   constructor(
       public navCtrl: NavController,
       public navParams: NavParams,
-      private screenOrientation: ScreenOrientation,
-      private platform: Platform) {
-        platform.ready().then(() => {
+      private screenOrientation: ScreenOrientation) {
+      /*  platform.ready().then(() => {
           this.orientation = this.screenOrientation.type;
           this.screenOrientation.onChange().subscribe(
             () => {
@@ -24,9 +23,10 @@ export class PagorefPage {
           this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.LANDSCAPE);
         }).catch(err => {
           console.log('Error while loading platform', err);
-        });
-      }
+        });*/
 
+      }
+/*
       getCurrentScreenOrientation(){
         //contine la orientacion de pantalla por default
         console.log(this.screenOrientation.type)
@@ -47,4 +47,5 @@ export class PagorefPage {
       }
       ionViewDidLoad() {
   }
+  */
 }
