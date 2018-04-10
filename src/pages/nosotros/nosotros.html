@@ -21,45 +21,6 @@
 
 
 <ion-content class="card-background-page" >
-<!--  <div>
-  <ion-fab right bottom>
-  <button ion-fab color="primary"><ion-icon name="arrow-dropleft"></ion-icon></button>
-  <ion-fab-list side="left">
-    <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
-    <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
-    <button ion-fab><ion-icon name="logo-youtube"></ion-icon></button>
-  </ion-fab-list>
-</ion-fab>
-
-<ion-fab right bottom>
-  <button ion-fab color="primary"><ion-icon name="arrow-dropleft"></ion-icon></button>
-  <ion-fab-list side="left">
-    <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
-    <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
-    <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
-    <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
-  </ion-fab-list>
-</ion-fab>
-
-<ion-fab left bottom>
-   <button ion-fab color="dark"><ion-icon name="arrow-dropup"></ion-icon></button>
-   <ion-fab-list side="top">
-     <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
-     <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
-     <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
-     <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
-   </ion-fab-list>
- </ion-fab>
-
-</div>-->
-<!--<ion-fab right bottom>
-<button ion-fab color="primary"><ion-icon name="arrow-dropleft"></ion-icon></button>
-<ion-fab-list side="left">
-  <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
-  <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
-  <button ion-fab><ion-icon name="logo-youtube"></ion-icon></button>
-</ion-fab-list>
-</ion-fab>-->
 <ion-card class="img">
     <img src="../../assets/imgs/turismo.jpg"/>
   </ion-card>
@@ -67,9 +28,10 @@
   <ion-fab right bottom>
   <button ion-fab color="primary"><ion-icon name="arrow-dropleft"></ion-icon></button>
   <ion-fab-list side="left">
-    <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
-    <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
-    <button ion-fab><ion-icon name="logo-youtube"></ion-icon></button>
+    <button ion-fab (click)="facebook()"><ion-icon name="logo-facebook"></ion-icon></button>
+    <button ion-fab (click)= "twitter()" ><ion-icon name="logo-twitter"></ion-icon></button>
+    <button ion-fab (click)="youtube()"><ion-icon name="logo-youtube"></ion-icon></button>
+    <button ion-fab (click)="sitio()"><ion-icon name="logo-chrome"></ion-icon></button>
   </ion-fab-list>
   </ion-fab>
 </ion-content>
