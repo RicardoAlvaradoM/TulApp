@@ -52,7 +52,7 @@ export class PagorefPage {
   }
   */
   urlpaste(){
-    this.url = "https://hackerrankgeek.wordpress.com/";
+    this.url = "http://tulancingo.gob.mx/antigua/predial/";
     return this.sanitize.bypassSecurityTrustResourceUrl(this.url);
   }
 }
