@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams} from 'ionic-angular';
 import {ScreenOrientation} from '@ionic-native/screen-orientation';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @IonicPage()
 @Component({
@@ -9,10 +10,12 @@ import {ScreenOrientation} from '@ionic-native/screen-orientation';
 })
 export class PagorefPage {
   orientation: string;
+  url: any;
   constructor(
       public navCtrl: NavController,
       public navParams: NavParams,
-      private screenOrientation: ScreenOrientation) {
+      private screenOrientation: ScreenOrientation,
+      private sanitize: DomSanitizer) {
       /*  platform.ready().then(() => {
           this.orientation = this.screenOrientation.type;
           this.screenOrientation.onChange().subscribe(
@@ -48,4 +51,8 @@ export class PagorefPage {
       ionViewDidLoad() {
   }
   */
+  urlpaste(){
+    this.url = "http://tulancingo.gob.mx/antigua/predial/";
+    return this.sanitize.bypassSecurityTrustResourceUrl(this.url);
+  }
 }
