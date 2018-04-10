@@ -12,6 +12,7 @@ import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
 import {GoogleMaps, Geocoder} from '@ionic-native/google-maps';
 import { Geolocation } from '@ionic-native/geolocation';
 import { CallNumber } from '@ionic-native/call-number';
+import {ScreenOrientation} from '@ionic-native/screen-orientation';
 
 //PipeTransform
 import {YoutubePipe} from "../pipes/youtube/youtube";
@@ -136,6 +137,7 @@ import { HistorialService} from '../providers/historial/historial';
     Geocoder,
     CallNumber,
     Geolocation,
+    ScreenOrientation,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
 
   ]
