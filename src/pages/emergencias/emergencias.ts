@@ -23,7 +23,7 @@ export class EmergenciasPage {
   callBomberos(){
     setTimeout(()=>{
       let tel = '7757530131';
-      window.open('tel;${tel}','_system');
+      window.open('tel:${tel}','_system');
     },100);
   }
   callPolicia(){
