@@ -20,8 +20,11 @@
 </ion-header>
 
 
-<ion-content style="overflow-y: hidden;">
-   <iframe  height="100%" width="100%" [src]="urlpaste()" name="iframe_a" scrolling="yes"></iframe>
+<ion-content>
+  <ion-scroll scrollX="true" class="scroll">
+    <iframe  [src]="urlpaste()" name="iframe_a"  class="frame"></iframe>
+  </ion-scroll>
+
 
   <!--
   <ion-scroll zooming="true" direction="xy" style="width: 500px; height: 500px">

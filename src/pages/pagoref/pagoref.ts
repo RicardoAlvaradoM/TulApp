@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams} from 'ionic-angular';
+import { Component,ViewChild } from '@angular/core';
+import { IonicPage, NavController, NavParams,Content} from 'ionic-angular';
 import {ScreenOrientation} from '@ionic-native/screen-orientation';
 import { DomSanitizer } from '@angular/platform-browser';
 
@@ -9,6 +9,7 @@ import { DomSanitizer } from '@angular/platform-browser';
   templateUrl: 'pagoref.html',
 })
 export class PagorefPage {
+   @ViewChild(Content) content: Content;
   orientation: string;
   url: any;
   constructor(
@@ -54,5 +55,10 @@ export class PagorefPage {
   urlpaste(){
     this.url = "http://tulancingo.gob.mx/antigua/predial/";
     return this.sanitize.bypassSecurityTrustResourceUrl(this.url);
+  }
+  scrollToTop() {
+    this.content.scrollToTop();
+  }
+
   }
 }
