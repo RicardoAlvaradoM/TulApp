@@ -133,10 +133,16 @@ page-sitios {
   background-image:url('../../assets/imgs/vagon.png');
   background-repeat:no-repeat;
   height:77px;
-  width:100% auto;
+  width:100%;
   background-position: center;
-  padding: 5px 10px;
-  border: 0px;
   background-size: 110%;
 }
+.contenido{
+  width: 100%;
+  height: calc(100%/1 - 2*1em - 2*1px);
+  position: relative;
+  display:block;
+  top: 0px;
+  border: 0px;
+  }
 }

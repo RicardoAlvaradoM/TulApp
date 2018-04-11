@@ -15,10 +15,12 @@
 </ion-header>
 
 
-<ion-content padding>
-  <button ion-button color="light" (click)="callBomberos()" round>Bomberos</button>
-  <button ion-button round (click)="callPolicia()">Policia</button>
-  <button ion-button color="secondary"  (click)="callEmergencia()" round>911</button>
-  <button ion-button color="danger" round (click)="callCruz()">Cruz Roja</button>
-  <button ion-button color="primary" (click)="callNumbers()" block>Transito</button>
+<ion-content>
+  <div class="btn0">
+    <button ion-button (click)="callBomberos()" class="bomberos" block outline full></button>
+    <button ion-button (click)="callPolicia()" class="sp" block outline ></button>
+    <button ion-button (click)="callEmergencia()" class="emer" block outline md></button>
+    <button ion-button (click)="callCruz()" class="cruz" block outline md></button>
+    <button ion-button (click)="callNumbers()" block class="transito" outline ></button>
+  </div>
 </ion-content>

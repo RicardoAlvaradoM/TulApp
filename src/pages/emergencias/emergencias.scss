@@ -5,14 +5,58 @@ page-emergencias {
       border-radius:150px;
       border:10px solid #666;
   }
-  .btn0{
-    background: url("../../assets/imgs/911.png")
-    no-repeat fixed center;
+  .emer{
+    background-image:url('../../assets/emergencias/911.png');
+    background-repeat:no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    border: 0px;
+    height:100%;
+    width:100%;
+  }
+  .bomberos{
+    background-image:url('../../assets/emergencias/bomberos.png');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:contain;
+    height:100%;
+    width:100%;
+    border: 0px;
+  }
+  .cruz{
+    background-image:url('../../assets/emergencias/cruz.png');
+    background-repeat:no-repeat;
     background-position: center;
     background-size: contain;
-    padding: 0px;
-    border-radius: 150px;
-    width:70%;
-    height:70%;
+    border: 0px;
+    height:100%;
+    width:100%;
+  }
+  .transito{
+    background-image:url('../../assets/emergencias/sp.png');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 0px;
+    height:100%;
+    width:100%;
+  }
+  .sp{
+    background-image:url('../../assets/emergencias/transito.png');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 0px;
+    height:100%;
+    width:100%;
+  }
+  .btn0{
+    width: 100%;
+    height: calc(100%/4 - 2*1em - 2*1px);
+    //height: 40%;
+    position: relative;
+    display:block;
+    top: 0px;
+    border: 0px;
   }
 }
