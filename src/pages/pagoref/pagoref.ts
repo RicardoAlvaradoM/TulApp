@@ -1,6 +1,5 @@
 import { Component,ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams,Content} from 'ionic-angular';
-import {ScreenOrientation} from '@ionic-native/screen-orientation';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @IonicPage()
@@ -15,7 +14,6 @@ export class PagorefPage {
   constructor(
       public navCtrl: NavController,
       public navParams: NavParams,
-      private screenOrientation: ScreenOrientation,
       private sanitize: DomSanitizer) {
       /*  platform.ready().then(() => {
           this.orientation = this.screenOrientation.type;

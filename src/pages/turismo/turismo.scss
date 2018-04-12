@@ -19,6 +19,8 @@ page-turismo {
   no-repeat fixed center;
   background-size: cover;
   padding: 0px;
+  display: flex;
+  z-index: 999;
 }
 /*  position: fixed;
     left: 0;
