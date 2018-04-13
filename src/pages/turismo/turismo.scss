@@ -17,10 +17,14 @@ page-turismo {
 .login-background {
   background: url("../../assets/imgs/foturi.jpg")
   no-repeat fixed center;
-  background-size: cover;
+  background-size: contain;
   padding: 0px;
+  height: 100%;
+  width: 100% auto;
+  position: absolute;
   display: flex;
-  z-index: 999;
+  justify-content: center;
+  z-index: 9;
 }
 /*  position: fixed;
     left: 0;
