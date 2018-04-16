@@ -26,3 +26,5 @@ export {HuapalcalcoPage} from "./huapalcalco/huapalcalco";
 export {BalnearioPage} from "./balneario/balneario";
 export {CaracolPage} from "./caracol/caracol";
 export {CafeteriaPage} from "./cafeteria/cafeteria";
+export {PueblosPage} from "./pueblos/pueblos";
+export {FeriaPage} from "./feria/feria";

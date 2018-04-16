@@ -47,6 +47,8 @@ import {
  BalnearioPage,
  CaracolPage,
  CafeteriaPage,
+ FeriaPage,
+ PueblosPage
 
 } from "../pages/index.paginas";
 import { MyApp } from './app.component';
@@ -86,6 +88,8 @@ import { HistorialService} from '../providers/historial/historial';
     BalnearioPage,
     CaracolPage,
     CafeteriaPage,
+    FeriaPage,
+    PueblosPage
   ],
   imports: [
     BrowserModule,
@@ -125,6 +129,9 @@ import { HistorialService} from '../providers/historial/historial';
     BalnearioPage,
     CaracolPage,
     CafeteriaPage,
+    FeriaPage,
+    PueblosPage
+
   ],
   providers: [
     StatusBar,

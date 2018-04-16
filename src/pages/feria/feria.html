@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Feria Tulancingo</ion-title>
+    <ion-buttons>
+    <button ion-button
+            icon-only
+            menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-scroll scrollX="true" scrollY="true" class="scroll" zooming="true" direction="xy">
+    <iframe  [src]="urlpaste()" name="iframe_a"  class="frame"></iframe>
+  </ion-scroll>
+</ion-content>

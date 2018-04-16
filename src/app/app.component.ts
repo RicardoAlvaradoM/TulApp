@@ -15,6 +15,8 @@ import {
   EmergenciasPage,
   NosotrosPage,
   BolsatrabajoPage,
+  FeriaPage,
+  PueblosPage
  } from "../pages/index.paginas";
  import { timer } from 'rxjs/observable/timer';
 @Component({
@@ -34,6 +36,8 @@ export class MyApp {
   emergencia = EmergenciasPage;
   nosotros =  NosotrosPage;
   trabajo = BolsatrabajoPage;
+  feria =  FeriaPage;
+  pueblos = PueblosPage;
   rootPage:any = PrincipalPage ;
 
   constructor(platform: Platform,
