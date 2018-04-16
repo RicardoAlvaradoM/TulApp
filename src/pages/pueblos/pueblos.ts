@@ -18,7 +18,7 @@ export class PueblosPage {
     console.log('ionViewDidLoad PueblosPage');
   }
   urlpaste(){
-    this.url = "http://tulancingo.gob.mx/antigua/predial/";
+    this.url = "http://pueblosindigenas.tulancingo.gob.mx/";
     return this.sanitize.bypassSecurityTrustResourceUrl(this.url);
   }
   scrollToTop() {

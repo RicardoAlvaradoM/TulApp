@@ -24,7 +24,7 @@ export class FeriaPage {
     console.log('ionViewDidLoad FeriaPage');
   }
   urlpaste(){
-    this.url = "http://tulancingo.gob.mx/antigua/predial/";
+    this.url = "http://feria.tulancingo.gob.mx";
     return this.sanitize.bypassSecurityTrustResourceUrl(this.url);
   }
   scrollToTop() {
