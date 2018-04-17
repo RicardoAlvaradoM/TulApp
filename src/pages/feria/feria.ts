@@ -1,12 +1,7 @@
 import { Component,ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, Content } from 'ionic-angular';
 import { DomSanitizer } from '@angular/platform-browser';
-/**
- * Generated class for the FeriaPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+
 
 @IonicPage()
 @Component({
